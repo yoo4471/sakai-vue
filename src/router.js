@@ -8,6 +8,16 @@ const routes = [
         component: App,
         children: [
             {
+                path: '/restapi',
+                name: 'rest_api_test',
+                component: () => import('./components/RestapiDemo.vue')
+            },
+            {
+                path: '/vuejs3',
+                name: 'vuejs3_tutorial',
+                component: () => import('./components/vuejs3_tutorial.vue')
+            },
+            {
                 path: '',
                 name: 'dashboard',
                 component: () => import('./components/Dashboard.vue')

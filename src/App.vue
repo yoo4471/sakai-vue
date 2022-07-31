@@ -35,6 +35,18 @@ export default {
             mobileMenuActive: false,
             menu : [
                 {
+                    label: 'Rest API Test',
+                    items: [{
+                        label: 'GET Rest API', icon: 'pi pi-fw pi-home', to: '/restapi'
+                    }]
+                },
+                {
+                    label: 'vuejs3_tutorial',
+                    items: [{
+                        label: 'vuejs3_tutorial', icon: 'pi pi-fw pi-home', to: '/vuejs3'
+                    }]
+                },
+                {
                     label: 'Home',
                     items: [{
                         label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/'
