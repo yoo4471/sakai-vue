@@ -98,6 +98,8 @@
                         class="mr-3">0</span><i class="pi pi-comment mr-1"></i><span class="mr-3">1</span><i
                         class="pi pi-eye mr-1"></i><span>24</span></div>
                   </div>
+                  <divider />
+                  <div class="text-500 font-medium mb-3 ml-3">Add a comment</div>
                 </div>
               </div>
             </div>
