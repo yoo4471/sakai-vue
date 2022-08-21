@@ -129,17 +129,16 @@
   </div>
   <Dialog maximizable:true v-model:visible="productDialog" :style="{ width: '800px' }" header="Product Details"
     :modal="true" class="p-fluid">
-    <!-- <div class=" text-center px-4 py-4 md:px-4 lg:px-8"> -->
-    <divider class="mt-0 mb-4" />
-    <div class="text-900 text-left font-medium text-2xl mb-3">Choose Type</div>
-    <div class="text-700 text-left line-height-3 mb-4">Bla Bla</div>
+    <divider class="m-0 p-0" />
+    <div class="text-900 text-left font-medium text-xl my-3">Choose Type</div>
+    <!-- <div class="text-700 text-left line-height-3 mb-4">Bla Bla</div> -->
     <div class="grid text-center">
       <div class="col-12 lg:col-4" @click="radioValue = 'aaa'">
         <div class="shadow-2 border-round border-2 cursor-pointer surface-card h-full"
           :class="'border-' + (radioValue == 'aaa' ? 'primary' : 'transparent')">
           <div class="p-3">
-            <div class="text-900 text-xl mb-3 font-medium">Action Item</div>
-            <p class="m-0 mb-3">Sub Title</p>
+            <div class="text-900 text-xl mb-2 font-medium">Get FA Information</div>
+            <p class="m-0 mb-2">distribution / bitmap / etc.</p>
             <div>
               <RadioButton id="option1" name="option" value="aaa" v-model="radioValue" />
             </div>
@@ -150,8 +149,8 @@
         <div class="shadow-2 border-round border-2 cursor-pointer surface-card h-full"
           :class="'border-' + (radioValue == 'bbb' ? 'primary' : 'transparent')">
           <div class="p-3">
-            <div class="text-900 text-xl mb-3 font-medium">Action Item</div>
-            <p class="m-0 mb-3">DoE</p>
+            <div class="text-900 text-xl mb-2 font-medium">DoE</div>
+            <p class="m-0 mb-2">Power / etc.</p>
             <div>
               <RadioButton id="option1" name="option" value="bbb" v-model="radioValue" />
             </div>
@@ -162,8 +161,8 @@
         <div class="shadow-2 border-round border-2 cursor-pointer surface-card h-full"
           :class="'border-' + (radioValue == 'ccc' ? 'primary' : 'transparent')">
           <div class="p-3">
-            <div class="text-900 text-xl mb-3 font-medium">Re-Test</div>
-            <p class="m-0 mb-3">Sub Title</p>
+            <div class="text-900 text-xl mb-2 font-medium">Comment</div>
+            <p class="m-0 mb-2">Sub title</p>
             <div>
               <RadioButton id="option1" name="option" value="ccc" v-model="radioValue" />
             </div>
@@ -171,9 +170,10 @@
         </div>
       </div>
     </div>
-    <divider class="py-3 my-3" />
-    <!-- </div> -->
-    <div class="field">
+    <divider class="p-0 m-0" />
+    <div class="text-900 text-left font-medium text-xl my-3">Basic Information</div>
+    <divider class="p-0 m-0" />
+    <div class="field my-3">
       <label for="name">Name</label>
       <InputText id="name" v-model.trim="product.name" required="true" autofocus
         :class="{ 'p-invalid': submitted && !product.name }" />
